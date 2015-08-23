@@ -37,6 +37,7 @@ prose:
     - CNAME
     - Gemfile
     - favicon.ico
+    - index.html
   metadata:
     _posts:
       - name: author
