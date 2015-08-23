@@ -38,6 +38,7 @@ prose:
     - Gemfile
     - favicon.ico
     - index.html
+    - pages/contact.html
   metadata:
     _posts:
       - name: author
