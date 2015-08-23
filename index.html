@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<article>
+  <h1>Home Page</h1>
+    <ul>
+      {% for post in paginator.posts %}
+      <li>
+        <a href='{{ post.url }}'>
+          <h3>{{ post.title }}</h3>
+          <time>{{ post.date | date: '%d %B'}}</time>
+          <p>{{ post.content | strip_html | truncatewords: 30 }}</p>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+    {% include pagination.html %}
+</article>

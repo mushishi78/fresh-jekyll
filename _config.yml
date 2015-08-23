@@ -1,0 +1,47 @@
+name: Fresh Jekyll
+description: 'Clean-slate, boiler-plate for Jekyll.'
+url: 'http://fresh-jekyll.com'
+baseurl: 'fresh-jekyll'
+email: fresh-jekyll@example.com
+twitter: '@fresh-jekyll'
+facebook: 'https://www.facebook.com/fresh-jekyll'
+google_analytics: 'UA-00000000-1'
+paginate:  5
+
+################################################################
+################################################################
+gems:
+  - jekyll-sitemap
+  - jekyll-feed
+sass:
+  sass_dir: /assets/_sass
+  style: :compressed
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - CNAME
+  - .gitignore
+prose:
+  ignore:
+    - _includes
+    - _layouts
+    - assets
+    - .gitignore
+    - CNAME
+    - Gemfile
+    - favicon.ico
+  metadata:
+    _posts:
+      - name: author
+        field:
+          element: text
+          label: Author
+      - name: category
+        field:
+          element: text
+          label: Category
+      - name: tags
+        field:
+          element: multiselect
+          label: Tags
+          alterable: true

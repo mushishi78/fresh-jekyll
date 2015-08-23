@@ -1,0 +1,37 @@
+$footer-height: 50px;
+
+* { margin: 0; }
+html, body { height: 100%; }
+
+main {
+  min-height: 100%;
+  margin-bottom: -($footer-height);
+  padding: 0 15%;
+}
+
+footer {
+  height: $footer-height;
+  text-align: center;
+}
+
+a { text-decoration: none; }
+button, textarea { outline: none; }
+li { padding: 5px 0; }
+
+header { text-align: center; }
+nav ul { list-style-type: none; padding: 0; }
+nav li { display: inline-block; }
+
+.pagination {
+	text-align: center;
+	padding: 20px;
+}
+
+.previous { float: left; }
+.next { float: right; }
+
+input, textarea {
+  width: 100%;
+  margin: 10px;
+  padding: 5px;
+}
