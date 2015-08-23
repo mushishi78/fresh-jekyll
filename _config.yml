@@ -21,6 +21,13 @@ exclude:
   - Gemfile.lock
   - CNAME
   - .gitignore
+defaults:
+  -
+    scope:
+      path: ''
+      type: posts
+    values:
+      layout: post
 prose:
   ignore:
     - _includes
