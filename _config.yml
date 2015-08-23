@@ -1,7 +1,7 @@
 name: Fresh Jekyll
 description: 'Clean-slate, boiler-plate for Jekyll.'
 url: 'http://fresh-jekyll.com'
-baseurl: 'fresh-jekyll'
+baseurl: '/fresh-jekyll'
 email: fresh-jekyll@example.com
 twitter: '@fresh-jekyll'
 facebook: 'https://www.facebook.com/fresh-jekyll'
