@@ -1,6 +1,6 @@
 <div class='pagination'>
   {% if paginator.previous_page %}
-    <a href='{{ paginator.previous_page_path }}' class='previous'>Previous</a>
+    <a href='{{ site.baseurl }}{{ paginator.previous_page_path }}' class='previous'>Previous</a>
   {% endif %}
 
   <span class='page-number'>
@@ -8,6 +8,6 @@
   </span>
 
   {% if paginator.next_page %}
-    <a href='{{ paginator.next_page_path }}' class='next'>Next</a>
+    <a href='{{ site.baseurl }}{{ paginator.next_page_path }}' class='next'>Next</a>
   {% endif %}
 </div>
