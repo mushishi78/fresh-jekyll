@@ -1,0 +1,24 @@
+---
+layout: page
+title: Authors
+permalink: /authors/
+---
+
+{% include jekyll-invert.html collection=site.posts field='author' %}
+
+<ul>
+  {% for author in inverted_keys %}
+    {% assign posts = inverted_values[forloop.index0] %}
+
+    <li>
+      <h2>{{ author }}</h2>
+      <ul>
+        {% for post in posts %}
+        <li>
+          <a href='{{ site.baseurl }}{{ post.url }}'>{{ post.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </li>
+  {% endfor %}
+</ul>
