@@ -4,16 +4,15 @@ title: Authors
 permalink: /authors/
 ---
 
-{% include jekyll-invert.html collection=site.posts field='author' %}
+{% assign author_posts = site.posts | group_by: 'author' %}
 
 <ul>
-  {% for author in inverted_keys %}
-    {% assign posts = inverted_values[forloop.index0] %}
+  {% for author_post in author_posts %}
 
     <li>
-      <h2>{{ author }}</h2>
+      <h2>{{ author_post.name }}</h2>
       <ul>
-        {% for post in posts %}
+        {% for post in author_post.items %}
         <li>
           <a href='{{ site.baseurl }}{{ post.url }}'>{{ post.title }}</a>
         </li>
